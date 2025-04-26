@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        html{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: transparent;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        h1{
+            color: aliceblue;
+        }
+        div.onlinediv{
+            display: flex;
+            justify-content: end;
+        }
+        label.online{
+            color:white;
+        }
+        img.favlinkicon{
+            min-width: 75px;
+            min-height: 75px;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid black;
+            transition: scale 0.3s ease, box-shadow 0.3s ease;
+        }
+        img.favlinkicon:hover{
+            scale: 1.3;
+        }
+        div.favlinktainer{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        div.favlinks{
+            
+            display: flex;
+            gap:20px;
+            justify-content: center;
+        }
+        div.settings{
+            display: flex;
+            justify-content: flex-end;
+        }
+        img.settingsicon{
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 3px solid black;
+}
+        .search input{
+            border: 3px solid black;
+            height: 40px;
+            width: 552px;
+            line-height: 24px;
+            background-color: rgba(0, 0, 0, 0.2);
+
+        }
+        div.search{
+            justify-content: center;
+            display: flex;
+            margin-bottom: 100px;
+        }
+        *{
+margin: 0;
+padding: 0;
+}
+.clocktainer{
+    justify-content: end;
+    display: flex;
+    margin-bottom: 100px;
+    
+}
+.clock{
+border: 1px solid #606060;
+color: white;
+padding: 40px;
+padding-right: 10px;
+border-radius: 10px;
+background-color: rgba(0, 0, 0, 0.2);
+width: fit-content;
+margin-right: 0;
+min-width: 465.367px;
+}
+#Date{
+font-size: 20px !important;
+text-align: end;
+}
+.clock ul{
+list-style: none;
+display: flex;
+font-size: 90px;
+gap: 15px;
+max-width: fit-content;
+}
+.to-dotainer{
+    margin-top: 100px;
+    justify-content: end;
+    display: flex;
+    margin-right: 50px;
+}
+.to-doliste{
+    width: 50vw;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: #808080;
+    min-height: 200px;
+    align-self: flex-end;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #606060;
+}
+.to-doliste h2{
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+.to-doliste input{
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 360px;
+    height: 40px;
+    background-color: aliceblue;
+}
+.to-doliste input::placeholder{
+    color: rgb(0, 0, 0, 0.3);
+}
+.to-doliste button{
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: aliceblue;
+}
+
+ul.todoul  {
+    list-style-type: none;
+}
+ul.todoul li::marker{
+    display: none;
+    content: none;
+}
+ul.todoul li {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Abstand zwischen Checkbox, Text und Button */
+    margin-bottom: 5px;
+}
+ul.todoul li input{
+    width: 40px;
+}
+div.settings{
+    display:flex;
+    flex-wrap: wrap;
+}
+</style>
+
+
+<script> 
+    let favicon1, favicon2, favicon3, favicon4, favicon5, favicon6, favicon7, favicon8, favicon9, favicon10;
+    let fullDomain1, fullDomain2, fullDomain3, fullDomain4, fullDomain5, fullDomain6, fullDomain7, fullDomain8, fullDomain9, fullDomain10;
+    let searchengine;
+    function domainfieldupdate(){
+    
+ domainlink1 = document.getElementById("linkfield1").value;
+ fullDomain1 = `https://${domainlink1}`;
+ favicon1 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink1}`;
+
+ domainlink2 = document.getElementById("linkfield2").value;
+ fullDomain2 = `https://${domainlink2}`;
+ favicon2 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink2}`;
+
+ domainlink3 = document.getElementById("linkfield3").value;
+ fullDomain3 = `https://${domainlink3}`;
+ favicon3 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink3}`;
+
+ domainlink4 = document.getElementById("linkfield4").value;
+ fullDomain4 = `https://${domainlink4}`;
+ favicon4 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink4}`;
+
+ domainlink5 = document.getElementById("linkfield5").value;
+ fullDomain5 = `https://${domainlink5}`;
+  favicon5 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink5}`;
+
+ domainlink6 = document.getElementById("linkfield6").value;
+ fullDomain6 = `https://${domainlink6}`;
+ favicon6 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink6}`;
+
+ domainlink7 = document.getElementById("linkfield7").value;
+ fullDomain7 = `https://${domainlink7}`;
+ favicon7 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink7}`;
+
+ domainlink8 = document.getElementById("linkfield8").value;
+ fullDomain8 = `https://${domainlink8}`;
+ favicon8 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink8}`;
+
+ domainlink9 = document.getElementById("linkfield9").value;
+ fullDomain9 = `https://${domainlink9}`;
+ favicon9 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink9}`;
+
+ domainlink10 = document.getElementById("linkfield10").value;
+ fullDomain10 = `https://${domainlink10}`;
+ favicon10 = `https://www.google.com/s2/favicons?sz=64&domain=${domainlink10}`;
+
+ searchengine = document.getElementById("searchenginesel").value;
+if (searchengine === "google") {
+    document.getElementById("searchengine").action = "https://www.google.com/search";
+} else if (searchengine === "duckduckgo") {
+    document.getElementById("searchengine").action = "https://duckduckgo.com/";
+}
+bgimage = document.getElementById("background-image").value;
+vidorimg = document.getElementById("vidorimg").value;
+if ( vidorimg === "video") {
+    document.getElementById("body").insertAdjacentHTML('beforeend', `
+  <div style="position: absolute; z-index: -1; width: 100%; height: 100%; overflow: hidden; top: 0; left: 0;">
+    <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; object-fit: cover;">
+      <source src="${bgimage}" type="video/mp4">
+    </video>
+  </div>
+`);
+} else if ( vidorimg === "image") {
+    document.getElementById("body").insertAdjacentHTML('beforeend', `
+  <div style="position: absolute; z-index: -1; width: 100%; height: 100%; overflow: hidden; top: 0; left: 0;">
+    <img style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; object-fit: cover;" src="${bgimage}">
+  </div>
+`);
+} 
+else if ( vidorimg === "color") {
+    document.getElementById("body").insertAdjacentHTML('beforeend', `
+  <div style=" background-color: ${bgimage};position: absolute; z-index: -1; width: 100%; height: 100%; overflow: hidden; top: 0; left: 0;">
+    
+  </div>
+`);
+} 
+    }
+
+        addEventListener("DOMContentLoaded", () => {
+        domainfieldupdate()
+    bildreload()
+    urlreload()
+    });
+    function bildreload(){
+    document.getElementById("favlinkicon1").src = favicon1;
+    document.getElementById("favlinkicon2").src = favicon2;
+    document.getElementById("favlinkicon3").src = favicon3;
+    document.getElementById("favlinkicon4").src = favicon4;
+    document.getElementById("favlinkicon5").src = favicon5;
+    document.getElementById("favlinkicon6").src = favicon6;
+    document.getElementById("favlinkicon7").src = favicon7;
+    document.getElementById("favlinkicon8").src = favicon8;
+    document.getElementById("favlinkicon9").src = favicon9;
+    document.getElementById("favlinkicon10").src = favicon10;
+    }
+    function urlreload(){
+    document.getElementById("favlink1").href = fullDomain1;
+    document.getElementById("favlink2").href = fullDomain2;
+    document.getElementById("favlink3").href = fullDomain3;
+    document.getElementById("favlink4").href = fullDomain4;
+    document.getElementById("favlink5").href = fullDomain5;
+    document.getElementById("favlink6").href = fullDomain6;
+    document.getElementById("favlink7").href = fullDomain7;
+    document.getElementById("favlink8").href = fullDomain8;
+    document.getElementById("favlink9").href = fullDomain9;
+    document.getElementById("favlink10").href = fullDomain10;
+    }
+    function reload(){
+    domainfieldupdate()
+    bildreload()
+    urlreload()
+    }
+
+    function clock(){
+var monthNames = [ "January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December" ];
+var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+var today = new Date();
+document.getElementById('Date').innerHTML = (dayNames[today.getDay()] + " " +
+today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' +today.getFullYear());
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+var day = h<11 ? 'AM': 'PM';
+h = h<10? '0'+h: h;
+m = m<10? '0'+m: m;
+s = s<10? '0'+s: s;
+document.getElementById('hours').innerHTML = h;
+document.getElementById('min').innerHTML = m;
+document.getElementById('sec').innerHTML = s;
+}var inter = setInterval(clock,400);
+
+let todo = [];          // Texte der ToDos
+let checkboxState = []; // Checkbox-Zustände
+let todoid = -1;
+
+function addtodo() {
+    let x = document.getElementById("todo").value.trim();
+    if (x === "") return;
+
+    todoid++;
+    todo[todoid] = x;
+    checkboxState[todoid] = false;
+
+    renderTodoList();
+    document.getElementById("todo").value = "";
+}
+
+function deletetodo(deleteid) {
+    todo[deleteid] = null;
+    checkboxState[deleteid] = null;
+    renderTodoList();
+}
+
+function deleteall() {
+    todo = [];
+    checkboxState = [];
+    todoid = -1;
+    renderTodoList();
+}
+
+function toggleCheckbox(id) {
+    checkboxState[id] = !checkboxState[id];
+    renderTodoList();
+}
+
+function renderTodoList() {
+    let listHTML = "";
+    for (let i = 0; i <= todoid; i++) {
+        if (todo[i] !== null) {
+            const checked = checkboxState[i] ? "checked" : "";
+            const style = checkboxState[i] ? "text-decoration: line-through;" : "";
+            listHTML += `
+                <li id="todo_${i}">
+                    <input id="todo_cb_${i}" type="checkbox" ${checked} onclick="toggleCheckbox(${i})">
+                    <span style="${style}">${todo[i]}</span>
+                    <button onclick="deletetodo(${i})">delete</button>
+                </li>`;
+        }
+    }
+    document.getElementById("todoul").innerHTML = listHTML;
+    updateProgress();
+}
+
+function updateProgress() {
+    let total = checkboxState.filter(x => x !== null).length;
+    let done = checkboxState.filter(x => x === true).length;
+
+    let percentage = total === 0 ? 0 : Math.round((done / total) * 100);
+
+    document.getElementById("ppm").innerText = `${percentage}%`;
+    document.getElementById("progressbar").style.width = `${percentage}%`;
+}
+
+</script>
+</head>
+<body id="body">
+
+      
+    
+
+<div class="onlinediv">    
+<label class="online">online</label>
+<img class="online" src="https://trichterih.github.io/Hoppernet/online.png" onerror="">
+</div>
+    <h1>Welcome back</h1>
+    <div class="clocktainer">
+        <div class="clock">
+        <div id="Date"></div><ul>
+        <li id="hours">00</li>
+        <li id="point">:</li>
+        <li id="min">00</li>
+        <li id="point">:</li>
+        <li id="sec">00</li>
+        </ul>
+        </div>
+        </div>
+    <div class="search">
+        <form method="GET" id="searchengine" action="https://www.duckduckgo.com/">
+            <input type="text" name="q" placeholder="Search ..." required>
+        </form>
+    </div>
+    <div class="favlinktainer">
+    <div class="favlinks">
+        <div><a id="favlink1" href=""><img id="favlinkicon1" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink2" href=""><img id="favlinkicon2" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink3" href=""><img id="favlinkicon3" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink4" href=""><img id="favlinkicon4" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink5" href=""><img id="favlinkicon5" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink6" href=""><img id="favlinkicon6" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink7" href=""><img id="favlinkicon7" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink8" href=""><img id="favlinkicon8" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink9" href=""><img id="favlinkicon9" class="favlinkicon" alt="Favicon"></a></div>
+        <div><a id="favlink10" href=""><img id="favlinkicon10" class="favlinkicon" alt="Favicon"></a></div>
+    </div>
+</div>
+    <div class="to-dotainer">
+    <div class="to-doliste">
+        <h2>To-do-Liste</h2>
+        <input type="text" id="todo">
+        <button onclick="addtodo()">Hinzufügen</button>
+        <button onclick="deleteall()">Alle löschen</button>
+        <div style="width: 100%; background-color: #ddd; border-radius: 5px; height: 20px;">
+            <div id="progressbar" style="height: 100%; width: 0%; background-color: limegreen; border-radius: 5px;"></div>
+          </div>
+        <p>Fortschritt: <span id="ppm">0%</span></p>
+        <ul class=todoul id="todoul"></ul>
+        
+        
+    </div>
+    </div>
+    <div class="settings">
+        <input type="text" id="linkfield1">
+        <input type="text" id="linkfield2">
+        <input type="text" id="linkfield3">
+        <input type="text" id="linkfield4">
+        <input type="text" id="linkfield5">
+        <input type="text" id="linkfield6">
+        <input type="text" id="linkfield7">
+        <input type="text" id="linkfield8">
+        <input type="text" id="linkfield9">
+        <input type="text" id="linkfield10">
+        <button onclick="reload()">reload</button>
+        <select id="searchenginesel">
+            <option value="google">Google</option>
+            <option value="duckduckgo">duckduckgo</option>
+        </select>
+        <select id="vidorimg">
+            <option value="image">Image</option>
+            <option value="video">Video</option>
+            <option value="color">Color</option>
+        </select>
+        <input type="text" id="background-image">
+        <img class="settingsicon" src="settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+    </div>
+    
+</body>
+</html>
