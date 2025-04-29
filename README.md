@@ -1,3 +1,3 @@
 # Tabnova
 
-<img src=Tabnova_screenshot.png>
+<img src=https://lordaxi.github.io/Tabnova-Assets/Tabnova.png>
