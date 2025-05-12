@@ -10,7 +10,7 @@ Version: beta-0.0.1
 Looking for a other Version? <a href=Versions.md>Versions</a>
 Explanation of Version Number
 
-FullVersion->0.0.0<- beta/alpha
-               ^
-               |
-               release candidate/expirimental version
+<br>FullVersion->0.0.0<- beta/alpha</br>
+<br>               ^</br>
+<br>               |</br>
+<br>               release candidate/expirimental version</br>
