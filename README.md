@@ -10,7 +10,4 @@ Version: beta-0.0.1
 Looking for a other Version? <a href=Versions.md>Versions</a>
 Explanation of Version Number
 
-<br>FullVersion->0.0.0<- beta/alpha</br>
-<br>               ^</br>
-<br>               |</br>
-<br>               release candidate/expirimental version</br>
+<img src=https://lordaxi.github.io/Tabnova-Assets/C9DCCB38-600C-45CD-99B8-FE71F31E4D56.png>
