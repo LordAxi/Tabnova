@@ -7,6 +7,10 @@
 <img src=https://lordaxi.github.io/Tabnova-Assets/screenshot-beta-0.0.1.png>
 Version: beta-0.0.1
 <br></br>
+Future:
+- multilanguages
+- set-up screen
+- weather/news
 Looking for a other Version? <a href=Versions.md>Versions</a>
 ## Explanation of Version Number
 
