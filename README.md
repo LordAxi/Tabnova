@@ -22,5 +22,5 @@ Version: beta-0.0.1
 ## Translation
 
 I am currently working on adding a translation / multi-language system. Since I don’t speak every language, I would really appreciate your support!
-If you want to contribute, simply download one of the existing language files (for example lang_en.json) out of the lang folder, translate the string values, and create a pull request with your new file (for example lang_de.json).
+If you want to contribute, simply download one of the existing language files (for example lang_en.json) out of the <a href="lang">lang folder, translate the string values, and create a pull request with your new file (for example lang_de.json).
 Thank you for helping make this project accessible to more people!
