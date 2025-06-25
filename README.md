@@ -13,7 +13,7 @@ Version: beta-0.0.1
 - multilanguages
 - set-up screen
 - weather/news
-Looking for a other Version? <a href=Versions.md>Versions</a>
+<br> Looking for another Versions? <a href=Versions.md>Versions</a>
 
 ## Explanation of Version Number
 
