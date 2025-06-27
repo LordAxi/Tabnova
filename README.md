@@ -8,6 +8,8 @@
 Version: beta-0.0.1
 <br></br>
 
+## Features:
+
 ## Future:
 
 - multilanguages
@@ -19,7 +21,7 @@ Version: beta-0.0.1
 
 <img src=https://lordaxi.github.io/Tabnova-Assets/C9DCCB38-600C-45CD-99B8-FE71F31E4D56.png>
 
-## Translation
+## 💬 Translation
 
 I am currently working on adding a translation / multi-language system. Since I don’t speak every language, I would really appreciate your support!
 If you want to contribute, simply download one of the existing language files (for example lang_en.json) out of the <a href="lang">lang folder </a>, translate the string values, and create a pull request with your new file (for example lang_de.json).
