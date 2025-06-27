@@ -28,7 +28,7 @@ Version: beta-0.0.1
 
 ## 🧠 Explanation of Version Number
 
-<img src=https://lordaxi.github.io/Tabnova-Assets/C9DCCB38-600C-45CD-99B8-FE71F31E4D56.png>
+<img src=https://lordaxi.github.io/Tabnova-Assets/Explanation_of_versions.png>
 
 ## 💬 Translation
 
