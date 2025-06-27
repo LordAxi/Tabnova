@@ -1,3 +1,4 @@
+![Version](https://img.shields.io/badge/version-beta--0.0.1-blue)
 # Tabnova
 
 <img src=https://lordaxi.github.io/Tabnova-Assets/Tabnova.png>
@@ -9,15 +10,23 @@ Version: beta-0.0.1
 <br></br>
 
 ## Features:
+- Setup-screen
+- Clock
+- custom links with picture
+- custom welcome message
+- custom color, image & video background
+- Todo-list with progressbar
+- Mp3 player
 
-## Future:
 
-- multilanguages
-- set-up screen
-- weather/news
+## 🚀 Planned Features
+
+- Multi-language support  
+- Improved setup screen  
+- Integrated weather and news  
 <br> Looking for another Version? <a href=Versions.md>Versions</a>
 
-## Explanation of Version Number
+## 🧠 Explanation of Version Number
 
 <img src=https://lordaxi.github.io/Tabnova-Assets/C9DCCB38-600C-45CD-99B8-FE71F31E4D56.png>
 
