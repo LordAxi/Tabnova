@@ -1,5 +1,5 @@
 ![Version](https://img.shields.io/badge/version-beta--0.0.1-blue)
-[![License](https://img.shields.io/badge/license-Tabnova%20License%20v1.0-blue)](./LICENSE.md)
+[![License](https://img.shields.io/badge/license-Tabnova%20License%20v1.0-blue)](LICENSE)
 # Tabnova
 
 <img src=https://lordaxi.github.io/Tabnova-Assets/Tabnova.png>
