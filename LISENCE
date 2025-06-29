@@ -1,30 +1,37 @@
-Tabnova License v1.0 (Non-Commercial Open Source, With Contributor Protection)
+Tabnova License v1.0  
+(Created for the Tabnova Project)
 
-1. Usage:
-   - This software is free to use, modify, and redistribute **for non-commercial purposes**.
-   - Companies and organizations may use, fork, and improve this project **as long as**:
-     - It remains **open source**, and
-     - Clear credit is given to the original authors.
+Copyright © 2025 LordAxi
 
-2. Distribution:
-   - Modified versions may be distributed **only** if:
-     - They include a visible notice of changes.
-     - They remain open source and credit the original authors.
+1. Usage Rights
+You are free to:
+- Use, study, and modify the code.
+- Use it in personal or internal projects, regardless of commercial intent.
+- Redistribute unmodified or modified versions non-commercially, if proper credit is given and the project remains open source.
 
-3. Commercial Use:
-   - Selling this software or including it in **paid products** is not allowed, except with explicit permission.
-   - Use in **free** software projects is allowed, under the same terms.
+2. Modification and Derivatives
+- You may modify this software freely for private use without obligation to publish.
+- If you publish modified versions:
+  - The source code must remain open and publicly accessible.
+  - Proper attribution to the original project ("Tabnova") must be given.
 
-4. Liability & Warranty:
-   - The software is provided **"as is"** without warranty of any kind.
-   - The authors and contributors are **not liable** for any damages or issues caused by this software.
+3. Commercial Use
+- You may not sell or include this software in paid products without explicit written permission.
+- Non-commercial redistribution (including by companies) is allowed if:
+  - The software remains open-source.
+  - Proper attribution is included (e.g., “Based on Tabnova by LordAxi”).
 
-5. Experimental Use:
-   - Experimental code is exempt from redistribution unless marked as stable.
+4. Liability
+This software is provided “as is”, without warranty of any kind, express or implied. The author is not liable for any damages or issues arising from its use.
 
-6. Contributor Protection:
-   - Contributions are welcomed.
-   - Contributors are not liable for any issues resulting from their changes.
+5. Experimental Code
+Use of experimental or unstable components is **not recommended** in other projects unless reviewed and confirmed stable.
 
-7. Miscellaneous:
-   - This license is subject to change in future versions. Earlier versions remain valid under their original terms.
+6. Contributor Protection
+All contributions to this project are licensed under the same terms. Contributors retain copyright to their own contributions.
+
+7. License Copy
+You must include a copy of this license in any redistribution.
+
+Attribution Example:
+"This software includes components from Tabnova (https://github.com/LordAxi/Tabnova), licensed under the Tabnova License v1.0."
