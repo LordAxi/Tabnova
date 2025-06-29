@@ -46,3 +46,9 @@ To help keep Tabnova safe for everyone:
 - All contributions should follow best practices for privacy and security.
 
 Thank you for helping keep Tabnova clean and safe.
+
+## 📄 License 
+
+Tabnova uses its own custom Tabnova License.
+You can find it in the LICENSE file.
+
