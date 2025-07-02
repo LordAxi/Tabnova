@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Black+Ops+One&family=Caveat:wght@400..700&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Knewave&family=Kode+Mono:wght@400..700&family=Lobster&family=Merienda:wght@300..900&family=Mystery+Quest&family=Permanent+Marker&family=Rock+Salt&family=Silkscreen:wght@400;700&family=Warnes&display=swap");
+body {
+  background: linear-gradient(60deg, #ff6a00, #ee0979, #8e2de2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+div.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+h1.welcome {
+  margin-top: 35vh;
+  font-family: Bebas Neue;
+  font-size: 100px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 130px;
+  height: min-content;
+}
+
+mark.Tabnova {
+  color: blue;
+  font-family: "Silkscreen", monospace;
+  display: inline-block;
+  white-space: nowrap; /* verhindert Zeilenumbruch */
+  overflow: hidden;
+  width: 0;
+  animation: Tabnova 0.75s steps(7) forwards;
+  max-width: max-content;
+  background-color: transparent;
+}
+mark.Tabnovades {
+  background-color: blue;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-top: 0;
+  line-height: normal;
+}
+
+@keyframes Tabnova {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 7ch;
+  }
+}
+
+button.finishsetupoption {
+  font-size: 30px;
+  font-family: Doto;
+  font-weight: 280px;
+  color: black;
+  border: 1.5px solid black;
+  border-radius: 50px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  background-color: #505050;
+}
+
+button.button {
+  font-size: 30px !important;
+  font-family: Doto !important;
+  font-weight: 280px !important;
+  color: black !important;
+  border: 1.5px solid black !important;
+  border-radius: 50px !important;
+  background-color: ghostwhite !important;
+}
+
+button.start {
+  font-size: 30px;
+  font-family: Doto;
+  font-weight: 280px;
+  color: black;
+  border: 1.5px solid black;
+  border-radius: 50px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  background-color: ghostwhite;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center; /* vertikal & horizontal */
+  height: 100vh;
+  text-align: center;
+}
+
+.content {
+  background-color: white;
+  border: 8px solid #6d6d6d;
+  border-radius: 50px;
+  max-width: fit-content; /* optional */
+  max-height: fit-content;
+}
+p.introduction {
+  font-family: permanent Marker;
+  font-size: 25px;
+}
+.setupoption {
+  height: 120px;
+  background-color: transparent;
+  border: 1px solid black;
+  text-align: left;
+  font-family: Kode Mono;
+  font-size: 15px;
+  transition: font-size 0.3s ease;
+}
+.setupoption mark.title {
+  background-color: transparent;
+  font-size: 30px;
+  transition: font-size 0.3s ease;
+}
+.setupoption.intense {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.introductionh1 {
+  font-family: Bebas Neue;
+  font-size: 85px;
+}
+.standard:hover {
+  background-color: #ddd5f2;
+  font-size: 18px;
+  cursor: pointer;
+}
+.standard:hover mark.title {
+  font-size: 35px;
+}
+.custom:hover {
+  background-color: #f6c6df;
+  font-size: 18px;
+  cursor: pointer;
+}
+.custom:hover mark.title {
+  font-size: 35px;
+}
+.intense:hover {
+  background-color: #ffdabf;
+  font-size: 18px;
+  cursor: pointer;
+}
+.intense:hover mark.title {
+  font-size: 35px;
+}

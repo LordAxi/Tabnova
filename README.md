@@ -1,5 +1,6 @@
 ![Version](https://img.shields.io/badge/version-beta--0.0.1-blue)
 [![License](https://img.shields.io/badge/license-Tabnova%20License%20v1.0-blue)](LICENSE.txt)
+
 # Tabnova
 
 <img src=https://lordaxi.github.io/Tabnova-Assets/Tabnova.png>
@@ -11,6 +12,7 @@ Version: beta-0.0.1
 <br></br>
 
 ## Features:
+
 - Setup-screen
 - Clock
 - custom links with picture
@@ -19,13 +21,12 @@ Version: beta-0.0.1
 - Todo-list with progressbar
 - Mp3 player
 
-
 ## 🚀 Planned Features
 
-- Multi-language support  
-- Improved setup screen  
+- Multi-language support
+- Improved setup screen
 - Integrated weather and news  
-<br> Looking for another Version? <a href=Versions.md>Versions</a>
+  <br> Looking for another Version? <a href=Versions.md>Versions</a>
 
 ## 🧠 Explanation of Version Number
 
@@ -42,13 +43,13 @@ Thank you for helping make this project accessible to more people!
 Tabnova is an open-source project. That means **you can review all of the code yourself** — there's no hidden or malicious behavior.
 
 To help keep Tabnova safe for everyone:
+
 - Please do not include external scripts from untrusted sources in your pull requests.
 - All contributions should follow best practices for privacy and security.
 
 Thank you for helping keep Tabnova clean and safe.
 
-## 📄 License 
+## 📄 License
 
 Tabnova uses its own custom Tabnova License.
 You can find it in the LICENSE file.
-
