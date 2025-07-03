@@ -3,12 +3,17 @@
   "name": "Tabnova",
   "version": "0.0.1",
   "description": "A better New Tab experience",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "Tabnova@addon"
+    }
+  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
   "icons": {
-    "48": "icon.png",
-    "96": "icon.png"
+    "48": "assets/icon.png",
+    "96": "assets/icon.png"
   },
   "permissions": []
 }
